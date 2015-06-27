@@ -39,8 +39,10 @@ module.exports = {
     },
     success: {
       description: 'Done.',
-      typeclass: '*',
-      variableName: 'result'
+      example: {
+        email: "test@test.com",
+        name: "ABC"
+      }
     }
 
   },
