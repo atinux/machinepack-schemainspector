@@ -21,6 +21,16 @@
     },
     {
       "using": {
+        "data": "seb@chopin.io",
+        "schema": {
+          "type": "string",
+          "pattern": "email"
+        }
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
         "data": true,
         "schema": {
           "type": "boolean"
