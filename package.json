@@ -1,0 +1,37 @@
+{
+  "name": "machinepack-schemainspector",
+  "version": "1.0.0",
+  "description": "Schema-Inspector is an JSON API sanitisation and validation module.",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "keywords": [
+    "Schema-Inspector",
+    "Schema Inspector",
+    "JSON validation",
+    "JSON sanitisation",
+    "machines",
+    "machinepack"
+  ],
+  "author": "Sebastien Chopin",
+  "license": "MIT",
+  "dependencies": {
+    "machine": "^10.0.0",
+    "schema-inspector": "^1.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atinux/machinepack-schemainspector.git"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^2.0.0"
+  },
+  "machinepack": {
+    "friendlyName": "Schema-Inspector",
+    "machineDir": "machines/",
+    "machines": [
+      "sanitize",
+      "validate"
+    ]
+  }
+}
