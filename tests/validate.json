@@ -1,0 +1,98 @@
+{
+  "machine": "validate",
+  "expectations": [
+    {
+      "using": {
+        "data": "hi",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "data": 23523,
+        "schema": {
+          "type": "integer"
+        }
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "data": true,
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "data": {
+          "foo": "bar"
+        },
+        "schema": {
+          "type": "object"
+        }
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "data": [1, 2, 3, 4, 5],
+        "schema": {
+          "type": "array"
+        }
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "data": {
+          "lines": ["800 Widgehedge St.","Suite 458"],
+          "zip": "78731",
+          "city": "Austin",
+          "country": "United States"
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "lines": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "zip": {"type": "string"},
+            "city": {"type": "string"},
+            "country": {"type": "string", "required": true}
+          }
+        }
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "data": {
+          "lines": ["800 Widgehedge St.","Suite 458"],
+          "zip": 78731,
+          "city": "Austin",
+          "country": "United States"
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "lines": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "zip": {"type": "string"},
+            "city": {"type": "string"},
+            "country": {"type": "string", "optional": false}
+          }
+        }
+      },
+      "outcome": "invalid"
+    }
+  ]
+}
