@@ -13,13 +13,15 @@ module.exports = {
     schema: {
       typeclass: 'dictionary',
       description: 'The JSON-schema to sanitize against',
-      required: true
+      required: true,
+      example: '*'
     },
 
     data: {
-      typeclass: '*',
+      typeclass: 'dictionary',
       description: 'The data to sanitize (i.e. the "JSON instance")',
-      required: true
+      required: true,
+      example: '*'
     }
 
   },
@@ -32,7 +34,11 @@ module.exports = {
       description: 'Unexpected error occurred.'
     },
     success: {
-      description: 'OK.'
+      friendlyName: 'then',
+      description: 'Send back the data sanitized.',
+      getExample: function (inputs, env) {
+        return inputs.data;
+      }
     }
 
   },

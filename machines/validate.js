@@ -13,13 +13,15 @@ module.exports = {
     schema: {
       typeclass: 'dictionary',
       description: 'The JSON-schema to validate against',
-      required: true
+      required: true,
+      example: '*'
     },
 
     data: {
-      typeclass: '*',
+      typeclass: 'dictionary',
       description: 'The data to validate (i.e. the "JSON instance")',
-      required: true
+      required: true,
+      example: '*'
     }
 
   },

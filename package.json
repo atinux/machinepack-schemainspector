@@ -1,6 +1,6 @@
 {
   "name": "machinepack-schemainspector",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Schema-Inspector is an JSON API sanitisation and validation module.",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
