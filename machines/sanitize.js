@@ -32,11 +32,7 @@ module.exports = {
       description: 'Unexpected error occurred.'
     },
     success: {
-      description: 'Done.',
-      example: {
-        email: "test@test.com",
-        name: "ABC"
-      }
+      description: 'OK.'
     }
 
   },

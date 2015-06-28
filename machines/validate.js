@@ -38,11 +38,7 @@ module.exports = {
                 Property @.dolor[4]: must match [email], but is equal to "test"'
     },
     success: {
-      description: 'Done.',
-      example: {
-        email: "test@test.com",
-        name: "ABC"
-      }
+      description: 'OK.'
     }
 
   },
