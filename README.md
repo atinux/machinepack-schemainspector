@@ -6,6 +6,8 @@
 
 ### [Docs](http://node-machine.org/machinepack-schemainspector) &nbsp; [Browse other machines](http://node-machine.org/machinepacks) &nbsp;  [FAQ](http://node-machine.org/implementing/FAQ)  &nbsp;  [Newsgroup](https://groups.google.com/forum/?hl=en#!forum/node-machine)
 
+![Schema Inspector](https://raw.githubusercontent.com/Atinux/machinepack-schemainspector/master/misc/schema-inspector-logo.png](https://github.com/Atinux/schema-inspector)
+
 Schema-Inspector is an JSON API sanitisation and validation module.
 
 
