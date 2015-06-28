@@ -6,9 +6,9 @@
 
 ### [Docs](http://node-machine.org/machinepack-schemainspector) &nbsp; [Browse other machines](http://node-machine.org/machinepacks) &nbsp;  [FAQ](http://node-machine.org/implementing/FAQ)  &nbsp;  [Newsgroup](https://groups.google.com/forum/?hl=en#!forum/node-machine)
 
-![Schema Inspector](https://raw.githubusercontent.com/Atinux/machinepack-schemainspector/master/misc/schema-inspector-logo.png](https://github.com/Atinux/schema-inspector)
+[![Schema Inspector](https://raw.githubusercontent.com/Atinux/machinepack-schemainspector/master/schema-inspector-logo.png)](https://github.com/Atinux/schema-inspector)
 
-Schema-Inspector is an JSON API sanitisation and validation module.
+Schema-Inspector is a JSON API sanitisation and validation module.
 
 
 ## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-schemainspector.svg)](http://badge.fury.io/js/machinepack-schemainspector) [![Build Status](https://travis-ci.org/Atinux/machinepack-schemainspector.png?branch=master)](https://travis-ci.org/Atinux/machinepack-schemainspector)
