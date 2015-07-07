@@ -35,6 +35,8 @@ module.exports = {
       friendlyName: 'then',
       description: 'Send back the data sanitized.',
       getExample: function (inputs, env) {
+        var inspector = require('schema-inspector');
+        inspector.sanitize(inputs.schema, inputs.data);
         return inputs.data;
       }
     }
