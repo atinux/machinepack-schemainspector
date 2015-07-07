@@ -52,7 +52,10 @@ module.exports = {
         var data = {};
         for (var key in schema.properties) {
           schema.properties[key] = schema.properties[key] || {};
-          data[key] = mapping[schema.properties[key].type] || inputs.data[key] || 'abc';
+          schema.properties[key].optional = (typeof schema.properties[key].optional === 'boolean' ? schema.properties[key].optional : (schema.properties[key].optional !== 'false'));
+          if (schema.properties[key] && schema.properties[key].optional === false) {
+            data[key] = mapping[schema.properties[key].type] || inputs.data[key] || 'abc';
+          }
         }
         return data;
       }
