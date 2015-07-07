@@ -35,9 +35,25 @@ module.exports = {
       friendlyName: 'then',
       description: 'Send back the data sanitized.',
       getExample: function (inputs, env) {
-        var inspector = require('schema-inspector');
-        inspector.sanitize(inputs.schema, inputs.data);
-        return inputs.data;
+        var mapping = {
+          'string': 'abc',
+          'number': 9.99,
+          'integer': 23,
+          'array': [],
+          'object': {},
+          'boolean': true,
+          'null': null,
+          'date': new Date(),
+          'any': '*',
+        };
+        var schema = inputs.schema || {};
+        if (schema.type !== 'object')
+          return mapping[schema.type];
+        var data = {};
+        for (var key in schema.properties) {
+          data[key] = mapping[schema.properties[key].type] || inputs.data[key] || 'abc';
+        }
+        return data;
       }
     }
 
