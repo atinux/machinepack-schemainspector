@@ -51,6 +51,7 @@ module.exports = {
           return mapping[schema.type];
         var data = {};
         for (var key in schema.properties) {
+          schema.properties[key] = schema.properties[key] || {};
           data[key] = mapping[schema.properties[key].type] || inputs.data[key] || 'abc';
         }
         return data;
